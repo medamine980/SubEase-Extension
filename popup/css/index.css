@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #00ADB5;
+    --black1: #303841;
+}
+
+.about-us-modal {
+    border: none;
+    margin: auto;
+}
+
+.about-us-modal:focus {
+    outline: none;
+}
+
+.about-us-modal__container {
+    max-height: 200px;
+    padding: 1em;
+    overflow-y: auto;
+}
+
+.about-us-modal__container__title {
+    text-align: center;
+}
+
+.app-title {
+    color: var(--blue);
+    text-align: center;
+}
+
+body {
+    width: 25em;
+    min-height: 20em;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar__container {
+    margin: .3em;
+}
+
+.navbar__container__list {
+    display: flex;
+}
+
+.navbar__container__list__item {
+    border: 1px solid var(--blue);
+    transition: color .2s, background-color .2s;
+    padding: .4em;
+    cursor: pointer;
+}
+
+.navbar__container__list__item:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+.videos-list {
+    list-style: none;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.videos-list__item {
+    transition: background-color .2s;
+    cursor: pointer;
+    padding: .5em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.videos-list__item:hover {
+    background-color: #eeeeee;
+}
+
+.videos-list__item-msg {
+    text-align: center;
+    padding: .5em;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.videos-list__item__checkmark {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.5em;
+}

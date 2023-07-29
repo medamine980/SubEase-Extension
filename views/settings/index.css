@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    color: inherit;
+    font-size: 1rem;
+    font-family: "segoe ui", Tahoma sans-serif;
+}
+
+label {
+    font-size: 1rem;
+}
+
+:root {
+    --blue: #00ADB5;
+    --black1: #303841;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(27, 27, 27, 0.795);
+    display: grid;
+    font-size: 1.2rem;
+    color: #EEEEEE;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: white;
+}
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.settings-container__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settings-container__item__subitem {
+    border: none;
+    padding: 1em;
+}
+
+.settings-container__item__range-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.settings-container__item__subitem--btn {
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color .2s;
+    text-align: left;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.settings-container__item__subitem--btn:hover {
+    background-color: #b3b3b3;
+    color: black
+}
+
+.settings-container__item__range-container__number-input {
+    width: 5em;
+    color: black;
+    text-align: center;
+}
+
+.settings-container__item__range-container__number-input:focus {
+    outline: none;
+}
+
+.settings-container__item__input {
+    margin: auto;
+}

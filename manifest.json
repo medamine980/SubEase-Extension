@@ -1,0 +1,51 @@
+{
+    "name": "SubEase",
+    "version": "1.0.0",
+    "author": "Mohamed-Amine",
+    "action": {
+        "default_title": "SubEase",
+        "default_popup": "popup/views/index.html"
+    },
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "js": [
+                "content_scripts/iframe_script.js"
+            ],
+            "css": [
+                "content_stylesheets/iframe_style.css"
+            ],
+            "all_frames": true
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://*/*"
+    ],
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "views/*",
+                "icons/icon48.png"
+            ],
+            "matches": [
+                "https://*/*"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}
