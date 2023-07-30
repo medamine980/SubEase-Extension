@@ -40,7 +40,7 @@ function detectVideoTitle(videoEle) {
 }
 
 chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
-    console.log(msg);
+    chrome.runtime.sendMessage({ "msg": "helllo" })
 });
 
 function syncTime(timeString, syncSeconds) {
@@ -336,14 +336,14 @@ chrome.runtime.onConnect.addListener(function (port) {
             if (type === "initial") {
                 let blobURL;
                 const linkIcon = document.querySelector("link[rel*='icon']")?.href;
-                if (!favicon) {
+                if (!favicon && favicon !== false) {
                     try {
                         blobURL = URL.createObjectURL(await (await fetch(linkIcon ?? "/favicon.ico")).blob());
-                        favicon
+                        favicon = blobURL;
                     } catch {
-
+                        favicon = false;
                     }
-                } else {
+                } else if (favicon) {
                     blobURL = favicon;
                 }
                 allVideos = document.querySelectorAll("video");

@@ -7,7 +7,9 @@ const langSelectorEle = document.querySelector("[data-lang-selector]");
 const closeBtn = document.querySelector("[data-close-btn]");
 const searchInfoMessageEle = document.querySelector("[data-search-info-message]");
 
+const MAX_IN_SEARCH = 40;
 const SEARCH_THROTTLE_TIME_IN_MS = 250;
+
 
 let throttleTimeOutId;
 
@@ -112,7 +114,7 @@ async function search(value) {
         searchInfoMessageEle.classList.add("show");
         return;
     }
-    const length = json.data.length > 20 ? 20 : json.data.length;
+    const length = json.data.length > MAX_IN_SEARCH ? MAX_IN_SEARCH : json.data.length;
     const fragment = new DocumentFragment();
     for (let i = 0; i < length; i++) {
         const { id, attributes: { files: [{ file_id: fileId }], language, feature_details: { movie_name } } } = json.data[i];

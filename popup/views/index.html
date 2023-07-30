@@ -21,7 +21,7 @@
     </dialog>
     <nav class="navbar">
         <div class="navbar__container">
-            <ul class="navbar__container__list">
+            <ul class="navbar__container__list" aria-busy="true" aria-describedby="loader">
                 <li class="navbar__container__list__item" data-about-us-btn>About us</li>
             </ul>
         </div>
@@ -29,6 +29,10 @@
     <ul class="videos-list" data-videos-list>
 
     </ul>
+    <div class="radar" data-radar>
+        <div class="radar__background"></div>
+        <progress class="radar__loader" id="loader" aria-label="loading" data-loading-prog></progress>
+    </div>
 </body>
 
 </html>

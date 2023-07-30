@@ -30,7 +30,12 @@ body {
 }
 
 .settings-container {
-    display: flex;
+    display: grid;
+    grid-template-areas: "select-subtitles-btn select-subtitles-btn"
+        "sync-label sync-range-container"
+        "enable-subtitles-label enable-subtitles-checkbox"
+        "bg-label bg-input"
+        "text-label text-input";
     flex-direction: column;
     list-style: none;
 }
@@ -48,7 +53,7 @@ body {
 
 .settings-container__item__range-container {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 5px;
 }

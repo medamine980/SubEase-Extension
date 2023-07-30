@@ -66,7 +66,7 @@ body {
 
 .videos-list {
     list-style: none;
-    max-height: 50vh;
+    max-height: 40vh;
     overflow-y: auto;
 }
 
@@ -78,6 +78,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1em;
+    padding-right: 2em;
 }
 
 .videos-list__item:hover {
@@ -91,6 +92,15 @@ body {
     font-size: 1.1em;
 }
 
+.videos-list__item__title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
 .videos-list__item__checkmark {
     position: absolute;
     top: 50%;
@@ -99,4 +109,42 @@ body {
     color: var(--blue);
     font-weight: bold;
     font-size: 1.5em;
+}
+
+.radar {
+    position: relative;
+    margin-top: 10px;
+}
+
+.radar__background {
+    transform: translateX(-50%);
+    width: 6em;
+    background-image: repeating-radial-gradient(circle 25px at center, black 10% 20%, var(--blue) 30% 40%);
+    height: 6em;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+}
+
+.radar__loader {
+    appearance: none;
+    display: block;
+    margin: auto;
+    border: 3em solid transparent;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    border-top-color: #74f3f9cc;
+    animation: spin .7s linear infinite;
+}
+
+.radar__loader:indeterminate::-webkit-progress-bar {
+    display: none;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }
