@@ -1,7 +1,7 @@
 {
     "name": "SubEase",
     "version": "1.0.0",
-    "author": "Mohamed-Amine",
+    "author": "Mohamed-Amine Benali",
     "action": {
         "default_title": "SubEase",
         "default_popup": "popup/views/index.html"
@@ -27,7 +27,8 @@
         "storage"
     ],
     "host_permissions": [
-        "https://*/*"
+        "https://*/*",
+        "https://translate.google.com/"
     ],
     "background": {
         "service_worker": "service-worker.js"
@@ -36,7 +37,8 @@
         {
             "resources": [
                 "views/*",
-                "icons/icon48.png"
+                "icons/icon128.png",
+                "images/*"
             ],
             "matches": [
                 "https://*/*"

@@ -12,6 +12,7 @@
 }
 
 .about-us-modal {
+    width: 100%;
     border: none;
     margin: auto;
 }
@@ -26,23 +27,34 @@
     overflow-y: auto;
 }
 
-.about-us-modal__container__title {
-    text-align: center;
+ul {
+    margin-left: 2em;
 }
 
-.app-title {
-    color: var(--blue);
+.about-us-modal__container__title {
     text-align: center;
 }
 
 body {
     width: 25em;
     min-height: 20em;
+    margin: .5em;
 }
 
-.navbar {
-    width: 100%;
+.app-header {
+    display: flex;
+    justify-content: space-between;
 }
+
+.app-title {
+    color: var(--blue);
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+}
+
+.navbar {}
 
 .navbar__container {
     margin: .3em;
@@ -50,6 +62,7 @@ body {
 
 .navbar__container__list {
     display: flex;
+    list-style: none;
 }
 
 .navbar__container__list__item {
@@ -68,6 +81,7 @@ body {
     list-style: none;
     max-height: 40vh;
     overflow-y: auto;
+    margin: 0;
 }
 
 .videos-list__item {
