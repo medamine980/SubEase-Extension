@@ -8,8 +8,10 @@ It provides features such as synchronizing the subtitles, change the background 
 
 ### Credits
 Created by [me][my-github] and [Bnilss][Bnliss-github]  
+UI and UX inspired by [Substital][substital]  
 Subtitles provided by [OpenSubtitles][opensubtitle-link]
 
 [opensubtitle-link]: https://www.opensubtitles.com/en
 [Bnliss-github]: https://github.com/Bnilss
 [my-github]: https://github.com/medamine980
+[substital]: https://substital.com/
