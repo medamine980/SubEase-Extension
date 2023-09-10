@@ -7,9 +7,8 @@ It provides features such as synchronizing the subtitles, change the background 
 
 
 ### Credits
-Created by [me][my-github] and [Bnilss][Bnilss-github]
-Subtitles provided by [OpenSubtitles](opensubtitles-website)
-
+Created by [me][my-github] and [Bnilss][Bnilss-github]  
+Subtitles provided by [OpenSubtitles](opensubtitles-website)  
 [opensubtitles-website]: https://www.opensubtitles.com/en
 [Bnilss-github]: https://github.com/Bnilss
 [my-github]: https://github.com/medamine980

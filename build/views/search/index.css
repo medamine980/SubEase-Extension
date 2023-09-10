@@ -77,7 +77,7 @@ body {
     background-color: black;
     position: relative;
     border: 1px solid var(--blue);
-    width: 70%;
+    flex-grow: 1;
     max-width: 50em;
     padding: .5em 1em;
     border-radius: 0 2% 2% 0 / 25%;

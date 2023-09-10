@@ -11,17 +11,32 @@
     --black1: #303841;
 }
 
-.about-us-modal {
-    width: 100%;
-    border: none;
-    margin: auto;
+::-webkit-scrollbar {
+    width: .7em;
 }
 
-.about-us-modal:focus {
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: .3em;
+}
+
+.about-us-modal,
+.settings-modal {
+    width: 100%;
+    max-height: 75%;
+    overflow-y: auto;
+    border: none;
+    margin: auto;
+    line-height: 2;
+}
+
+.about-us-modal:focus,
+.settings-modal:focus {
     outline: none;
 }
 
-.about-us-modal__container {
+.about-us-modal__container,
+.settings-modal__container {
     max-height: 200px;
     padding: 1em;
     overflow-y: auto;
@@ -41,8 +56,50 @@ body {
     margin: .5em;
 }
 
+.settings-modal__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.settings-modal__form__autosync-input {
+    display: none;
+    appearance: none;
+}
+
+.settings-modal__form__autosync-label2 {
+    cursor: pointer;
+    position: relative;
+    height: 2em;
+    width: 4em;
+    background-color: var(--black1);
+    border-radius: 2em;
+}
+
+.settings-modal__form__autosync-label2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform .2s;
+}
+
+.settings-modal__form__autosync-input:checked~.settings-modal__form__autosync-label2 {
+    background-color: var(--blue);
+}
+
+.settings-modal__form__autosync-input:checked~.settings-modal__form__autosync-label2::after {
+    transform: translate(100%);
+    background-color: white;
+}
+
 .app-header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -62,6 +119,7 @@ body {
 
 .navbar__container__list {
     display: flex;
+    gap: 2px;
     list-style: none;
 }
 
