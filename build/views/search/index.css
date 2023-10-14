@@ -67,6 +67,7 @@ body {
     border: 1px solid var(--blue);
     cursor: pointer;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .lang-selector:focus {

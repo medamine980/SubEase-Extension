@@ -1,0 +1,114 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #00ADB5;
+    --black1: #303841;
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+input {
+    font-size: inherit;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.nav {
+    background-color: var(--blue);
+}
+
+.nav__header {
+    display: flex;
+    max-width: min(100%, 250px);
+    align-items: center;
+    padding: .5em;
+    column-gap: .75em;
+    min-height: 7.5vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.login-form__response-message {
+    min-width: 1rem;
+    min-height: 1.5rem;
+}
+
+.login-form__response-message--error {
+    color: red;
+}
+
+.login-form__response-message--success {
+    color: green;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1.1em;
+    padding: 1em;
+    min-height: 92.5vh;
+}
+
+.login-form__div {
+    position: relative;
+    border: .5px solid;
+    border-radius: .25em;
+    padding: .25em;
+}
+
+.login-form__div__label {
+    position: absolute;
+    color: var(--black1);
+    top: 0;
+    left: .2em;
+    transition: .2s;
+    pointer-events: none;
+}
+
+.login-form__div__input:is(:focus, :not(:placeholder-shown))~.login-form__div__label {
+    transform: translateY(-115%);
+    font-size: .9rem;
+    color: var(--blue);
+}
+
+.login-form__login-btn {
+    border-radius: 5px;
+    background-color: var(--black1);
+    border: none;
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+    transition: background-color .25s;
+}
+
+.login-form__login-btn:hover {
+    background-color: black;
+}
+
+.progress {
+    position: fixed;
+    inset: 0;
+    background-color: #3038418f;
+    display: none;
+    place-content: center;
+}
+
+.progress.show {
+    display: grid;
+}
