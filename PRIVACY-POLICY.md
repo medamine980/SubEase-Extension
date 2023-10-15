@@ -18,4 +18,4 @@ We use the login token so you don't have to login everytime.
 
 The only that data that is shared is the credentials information you first enter to login (username and the password), we share this data with opensubtitles so they can tell us wether the username and the password are correct or no.
 
-** Last update: Octobre 15, 2023 **
+**Last update: Octobre 15, 2023**
