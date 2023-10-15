@@ -23,12 +23,10 @@
     ],
     "permissions": [
         "tabs",
-        "scripting",
         "storage"
     ],
     "host_permissions": [
-        "https://*/*",
-        "https://translate.google.com/"
+        "https://*/*"
     ],
     "background": {
         "service_worker": "service-worker.js"

@@ -50,12 +50,10 @@ module.exports = {
     ],
     entry: {
         "service-worker": "./src/service-worker.js",
-        "index": "./src/index.js",
         "views/search/index": "./src/views/search/index.js",
         "views/settings/index": "./src/views/settings/index.js",
         "views/login/login": "./src/views/login/login.js",
         "popup/js/index": "./src/popup/js/index.js",
-        "content_scripts/content_script": "./src/content_scripts/content_script.js",
         "content_scripts/iframe_script": "./src/content_scripts/iframe_script.js"
     },
     output: {
