@@ -4,7 +4,8 @@ A chrome extension that allows you to add different subtitles to your favorite s
 
 powered by [OpenSubtitles][opensubtitle-link] which provides thousands of subtitles!  
 
-Our goal is to allow subtitles to be used everywhere more easily, so that you can watch your favorite movie with your favorite language.
+Our goal is to allow subtitles to be used everywhere more easily, so that you can watch your favorite movie with your favorite language.  
+
 ![Screenshot of the menu interface](/store/Images/640x400/menu.png)
 ![Screenshot of the Search interface](/store/Images/640x400/search.png)  
 ![Screenshot of the Breaking Bad with subtitles](/store/Images/640x400/add_subtitle.png)
