@@ -1,3 +1,5 @@
+@import url(../../lib/fonts.css);
+
 *,
 *::after,
 *::before {
@@ -12,7 +14,7 @@
 }
 
 body {
-    font-family: 'Kanite', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-size: 13px;
     width: 28em;
     min-height: 25em;

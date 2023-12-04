@@ -1,13 +1,13 @@
 {
   "name": "subease",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "",
   "main": "service-worker.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "remove_build": "rmdir /s /q build && webpack",
+    "clean-build": "rmdir /s /q build & webpack",
     "build": "webpack"
   },
   "keywords": [],

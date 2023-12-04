@@ -1,3 +1,7 @@
 node_modules
 src
-store
+store/**
+!store/Images/
+!store/Images/640x400/
+!store/Images/640x400/**
+dist

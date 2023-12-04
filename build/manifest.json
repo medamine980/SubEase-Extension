@@ -1,7 +1,7 @@
 {
     "name": "SubEase",
-    "version": "0.1.0",
     "author": "Mohamed-Amine Benali",
+    "description": "Adding subtitles to any platform that offers streaming services.",
     "action": {
         "default_title": "SubEase",
         "default_popup": "popup/views/index.html"
@@ -47,5 +47,6 @@
         "16": "icons/icon16.png",
         "48": "icons/icon48.png",
         "128": "icons/icon128.png"
-    }
+    },
+    "version": "0.1.2"
 }
