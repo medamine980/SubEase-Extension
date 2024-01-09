@@ -18,10 +18,5 @@
     "html-minimizer-webpack-plugin": "^4.4.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
-  },
-  "dependencies": {
-    "@translate-tools/core": "^0.2.16",
-    "@vitalets/google-translate-api": "^9.2.0",
-    "http-proxy-agent": "^7.0.0"
   }
 }
